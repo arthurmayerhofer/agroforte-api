@@ -1,4 +1,4 @@
-# 📘 Agroforte Credit Engine
+# 📘 Agroforte API
 
 ### 💼 Projeto proposto no teste Java Pleno - Agroforte
 
@@ -16,8 +16,8 @@ Este projeto consiste em uma API RESTful para cadastro de **pessoa física** e s
 ### ▶️ Passos:
 
 ```bash
-git clone https://github.com/seuusuario/agroforte-credit-engine.git
-cd agroforte-credit-engine
+git clone https://github.com/seuusuario/agroforte-api.git
+cd agroforte-api
 ./mvnw spring-boot:run
 ```
 
@@ -137,11 +137,3 @@ com.agroforte
 - Cálculo financeiro centralizado no serviço `CalculoFinanceiroService`
 - Preparado para futura adição de **Pessoa Jurídica**
 - Fácil de testar, manter e escalar
-
----
-
-## 🤝 Autor
-
-Desenvolvido por **Arthur Mayerhofer**  
-Email: [arthur@email.com]  
-LinkedIn: [linkedin.com/in/seuperfil](#)
