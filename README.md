@@ -26,11 +26,45 @@ Acesse: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui
 
 ---
 
-## 🔧 Endpoints principais
+## 🔧 Endpoints principais + Exemplos de Teste
 
+### 📍 POST /api/pessoas/fisicas
+
+```bash
+curl -X POST http://3.90.214.127:8080/api/pessoas/fisicas \
+-H "Content-Type: application/json" \
+-d '{
+  "nome": "João Silva",
+  "email": "joao@email.com",
+  "cpf": "12345678901",
+  "rg": "MG1234567",
+  "celular": "(31)99999-9999",
+  "estadoCivil": "SOLTEIRO",
+  "genero": "MASCULINO",
+  "dataNascimento": "1990-05-20",
+  "nomeMae": "Maria Silva",
+  "nacionalidade": "Brasileira"
+}'
 ```
-POST /api/pessoas/fisicas
-POST /api/operacoes
+
+---
+
+### 📍 POST /api/operacoes
+
+```bash
+curl -X POST http://3.90.214.127:8080/api/operacoes \
+-H "Content-Type: application/json" \
+-d '{
+  "pessoaFisicaId": 1,
+  "dataInicio": "2025-01-01",
+  "dataEmissao": "2025-01-01",
+  "dataFim": "2025-12-31",
+  "quantidadeParcelas": 6,
+  "dataPrimeiraParcela": "2025-02-01",
+  "tempoCarencia": 1,
+  "valorOperacao": 12000.00,
+  "taxaMensal": 1.5
+}'
 ```
 
 ---
